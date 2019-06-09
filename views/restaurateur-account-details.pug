@@ -1,0 +1,74 @@
+extends layout
+
+block content
+    +search-hero
+    main.container(role='main' id='account-main')
+        .my-3.p-3.bg-white.rounded.shadow-sm
+            ul.nav.nav-tabs
+                li.nav-item
+                    a.nav-link(href='/restaurateur/account' type='submit' id='restaurateur-bookings') Bookings
+                li.nav-item
+                    a.nav-link(href='/restaurateur/account/tables' type='submit' id='restaurateur-tables') Tables
+                li.nav-item
+                    a.nav-link.active(href='/restaurateur/account/details' type='submit' id='restaurateur-details') Account details
+            h4.col.pt-4.border-bottom.border-gray Basic information:
+            .container.pt-3
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='First name', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Last name', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Email', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Phone number', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Restaurant name', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Address line 1', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Address line 2', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Suburb', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Post code', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='State', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-5
+                        .input-group
+                            input.form-control(type='text', placeholder='Country', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-5
+                h4.col.pt-1.border-bottom.border-gray Short description:
+                .row.pt-3
+                    .col-sm.pb-5
+                        .input-group
+                            textarea.form-control(placeholder='A short description of your restaurant to help customers find you.', aria-label='With textarea')
+                h4.col.pt-1.border-bottom.border-gray Restaurant picture:
+                .input-group.pt-3.mb-5
+                    .custom-file
+                        input#inputGroupFile02.custom-file-input(type='file')
+                        label.custom-file-label(for='inputGroupFile02', aria-describedby='inputGroupFileAddon02') Choose file
+                    .input-group-append
+                        span#inputGroupFileAddon02.input-group-text Upload
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            button.btn.btn-block.btn-secondary(type='button') Cancel
+                    .col-sm.pb-4
+                        .input-group
+                            button.btn.btn-block.btn-primary(type='button') Save

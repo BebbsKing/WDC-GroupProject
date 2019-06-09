@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    +search-hero
+    main.container(role='main')
+        .my-3.p-3.bg-white.rounded.shadow-sm
+            .container
+                .row
+                    .col-sm.pb-3
+                        p
+                        h3 Success!
+                        .container.border-bottom.border-gray.pb-3.mb-0
+                            .row.align-items-end
+                                .rounded.float-left.cover.thumbnail
+                                .col
+                                    h4.font-weight-bold Shobosho
+                                    a.book-info  🕐 05/30/2019
+                                    a.book-info  📅 7:30 PM
+                                    a.book-info  👤 2
+            .container
+                .row
+                    .col.pb-3
+                        button.btn.btn-danger(type='button') Cancel
+                .row
+                    .col-sm.pb-3
+                        .input-group
+                            button.btn.btn-block.btn-secondary(type='button') Add to Calendar
+                    .col-sm.pb-3
+                        .input-group
+                            button.btn.btn-block.btn-secondary(type='button') Invite guests
+                .row
+                    .col.pb-3
+                        a.btn.btn-block.btn-primary(href='/' type='submit') Done!

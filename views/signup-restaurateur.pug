@@ -1,0 +1,54 @@
+extends layout
+
+block content
+    .home
+        #bottom-alt.home
+        #top.home
+        #text.home
+            .container
+                .row
+                    .col-sm
+                        h1.display-4.text-white.align-content-center.pb-5 Find more customers with eatSpot
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='First name', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Last name', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Email', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Phone number', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Restaurant name', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Address line 1', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Address line 2', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Suburb', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Post code', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='State', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-5
+                        .input-group
+                            input.form-control(type='text', placeholder='Country', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-5
+                .row
+                    .col.pb-4
+                        a.btn.btn-lg.btn-block.btn-primary(href='/restaurateur/account' type='button') Sign up!

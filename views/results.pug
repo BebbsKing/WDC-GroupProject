@@ -1,0 +1,52 @@
+extends layout
+
+block content
+    +search-hero
+    .container
+        .card-deck
+            //TODO: Make pug iterate over a json file of search results
+            .card.mb-4.border-secondary(style='min-width: 320px')
+                img.card-img-top(src='/images/pizza0.jpg', alt='Picture of food item')
+                .card-body
+                    h5.card-title Pete's Pizza
+                    p.card-text
+                        | Pete makes the best pizza in town. Come for the authentic italian cuisine, stay for the atmosphere!
+                    a.btn.btn-primary.card-btn(href='/book' type='submit') Book!
+
+            .card.mb-4.border-secondary(style='min-width: 320px')
+                img.card-img-top(src='/images/food0.jpg', alt='Picture of food item')
+                .card-body
+                    h5.card-title Shobosho
+                    p.card-text
+                        | We blend the ancient traditions of Japanese yakitori with the finesse, skill & texture of all that is raw, cured, pickled and fermented.
+                    a.btn.btn-primary.card-btn(href='/book' type='submit') Book!
+
+            .card.mb-4.border-secondary(style='min-width: 320px')
+                img.card-img-top(src='/images/bar1.jpg', alt='Picture of food item')
+                .card-body
+                    h5.card-title Maybe Mae
+                    p.card-text Cocktail bar in Adelaide's West end.
+                    a.btn.btn-primary.card-btn(href='/book' type='submit') Book!
+
+            .card.mb-4.border-secondary(style='min-width: 320px')
+                img.card-img-top(src='/images/pizza0.jpg', alt='Picture of food item')
+                .card-body
+                    h5.card-title Pete's Pizza
+                    p.card-text
+                        | Pete makes the best pizza in town. Come for the authentic italian cuisine, stay for the atmosphere!
+                    a.btn.btn-primary.card-btn(href='/book' type='submit') Book!
+
+            .card.mb-4.border-secondary(style='min-width: 320px')
+                img.card-img-top(src='/images/food0.jpg', alt='Picture of food item')
+                .card-body
+                    h5.card-title Shobosho
+                    p.card-text
+                        | We blend the ancient traditions of Japanese yakitori with the finesse, skill & texture of all that is raw, cured, pickled and fermented.
+                    a.btn.btn-primary.card-btn(href='/book' type='submit') Book!
+
+            .card.mb-4.border-secondary(style='min-width: 320px')
+                img.card-img-top(src='/images/bar1.jpg', alt='Picture of food item')
+                .card-body
+                    h5.card-title Maybe Mae
+                    p.card-text Cocktail bar in Adelaide's West end.
+                    a.btn.btn-primary.card-btn(href='/book' type='submit') Book!

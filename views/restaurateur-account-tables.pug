@@ -1,0 +1,49 @@
+extends layout
+
+block content
+    +search-hero
+    main.container(role='main' id='account-main')
+        .my-3.p-3.bg-white.rounded.shadow-sm
+            ul.nav.nav-tabs
+                li.nav-item
+                    a.nav-link(href='/restaurateur/account' type='submit' id='restaurateur-bookings') Bookings
+                li.nav-item
+                    a.nav-link.active(href='/restaurateur/account/tables' type='submit' id='restaurateur-tables') Tables
+                li.nav-item
+                    a.nav-link(href='/restaurateur/account/details' type='submit' id='restaurateur-details') Account details
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.border-bottom.border-gray
+                    .col
+                        | This is where you can add or remove the table sizes available for booking and adjust how many tables of a given size are available to be reserved.
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.border-bottom.border-gray
+                    .col-2
+                        | Seats
+                    .col-7
+                        | Number of tables
+                    .col-3
+                        | Add/Remove table
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.lh-125.border-bottom.border-gray
+                    .col-2
+                        | 👤 2
+                    .col-7
+                        | 14
+                    .col-3
+                        .btn-group(role='group', aria-label='Basic example')
+                            button.btn.btn-secondary(type='button') ⬆
+                            button.btn.btn-secondary(type='button') ⬇
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.lh-125.border-bottom.border-gray
+                    .col-2
+                        | 👤 4
+                    .col-7
+                        | 7
+                    .col-3
+                        .btn-group(role='group', aria-label='Basic example')
+                            button.btn.btn-secondary(type='button') ⬆
+                            button.btn.btn-secondary(type='button') ⬇
+            .container.text-muted.pt-3
+                .row.media-body.mb-0.lh-125
+                    .col
+                        button.btn.btn-block.btn-primary(type='button') Add seating configuration

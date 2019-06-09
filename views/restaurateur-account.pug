@@ -1,0 +1,73 @@
+extends layout
+
+block content
+    +search-hero
+    main.container(role='main' id='account-main')
+        .my-3.p-3.bg-white.rounded.shadow-sm
+            ul.nav.nav-tabs
+                li.nav-item
+                    a.nav-link.active(href='/restaurateur/account' type='submit' id='restaurateur-bookings') Bookings
+                li.nav-item
+                    a.nav-link(href='/restaurateur/account/tables' type='submit' id='restaurateur-tables') Tables
+                li.nav-item
+                    a.nav-link(href='/restaurateur/account/details' type='submit' id='restaurateur-details') Account details
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.border-bottom.border-gray
+                    .col
+                        | Time
+                    .col-5
+                        | Name
+                    .col-3
+                        | Contact
+                    .col
+                        | People
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.lh-125.border-bottom.border-gray
+                    .col
+                        | 7:00 PM
+                    .col-5
+                        | Joe Bloggs
+                    .col-3
+                        | +61 040 123 123
+                    .col
+                        | 👤 2
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.lh-125.border-bottom.border-gray
+                    .col
+                        | 7:00 PM
+                    .col-5
+                        | Aulus Agerius
+                    .col-3
+                        | 08 8321 8321
+                    .col
+                        | 👤 4
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.lh-125.border-bottom.border-gray
+                    .col
+                        | 8:00 PM
+                    .col-5
+                        | John Smith
+                    .col-3
+                        | 0458000000
+                    .col
+                        | 👤 8
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.lh-125.border-bottom.border-gray
+                    .col-2
+                        | 6:30 PM 05/30/2019
+                    .col-5
+                        | Richard Roe
+                    .col-3
+                        | +61 408 010 101
+                    .col
+                        | 👤 2
+            .container.text-muted.pt-3
+                .row.media-body.pb-3.mb-0.lh-125.border-bottom.border-gray
+                    .col-2
+                        | 8:00 PM 05/31/2019
+                    .col-5
+                        | Han Henrich Van Der Vunderberg
+                    .col-3
+                        | +61 458 111 111
+                    .col
+                        | 👤 12

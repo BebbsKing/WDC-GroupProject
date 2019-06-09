@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    .home
+        #bottom-alt.home
+        #top.home
+        #text.home
+            // Call to action
+            h1.pb-5
+
+            .container
+                .row
+                    .col-sm
+                        h1.display-4.text-white.align-content-center.pb-5 Welcome Back!
+                .row
+                    .col-sm.pb-3
+                        .input-group
+                            input.form-control(type='text', placeholder='Email', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-5
+                        .input-group
+                            input.form-control(type='text', placeholder='Password', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col.pb-3
+                        a.btn.btn-lg.btn-block.btn-primary(href='/' type='submit') Login

@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    +search-hero
+    main.container(role='main' id='account-main')
+        .my-3.p-3.bg-white.rounded.shadow-sm
+            ul.nav.nav-tabs
+                li.nav-item
+                    a.nav-link(href='/account' type='submit' id='bookings') Bookings
+                li.nav-item
+                    a.nav-link.active(href='/account/details' type='submit' id='details') Account details
+            h4.col.pt-4.border-bottom.border-gray Basic information:
+            .container.pt-3
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='First name', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Last name', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Email', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Phone number', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            button.btn.btn-block.btn-secondary(type='button') Cancel
+                    .col-sm.pb-4
+                        .input-group
+                            button.btn.btn-block.btn-primary(type='button') Save

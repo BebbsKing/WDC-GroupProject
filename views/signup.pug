@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    .home
+        #bottom-alt.home
+        #top.home
+        #text.home
+            // Call to action
+            .container
+                .row
+                    .col-sm
+                        h1.display-4.text-white.align-content-center.pb-5 Always find the perfect table with eatSpot
+                .row
+                    .col-sm.pb-3
+                        .input-group
+                            input.form-control(type='text', placeholder='First name', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-3
+                        .input-group
+                            input.form-control(type='text', placeholder='Last name', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-3
+                        .input-group
+                            input.form-control(type='text', placeholder='Email', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-3
+                        .input-group
+                            input.form-control(type='text', placeholder='Phone number', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-5
+                        .input-group
+                            input.form-control(type='text', placeholder='Password', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-5
+                        .input-group
+                            a.btn.btn-secondary.btn-block(href='/signup-restaurateur' type='button') Restaurateur? Click here
+                .row
+                    .col.pb-3
+                        a.btn.btn-lg.btn-block.btn-primary(href='/account' type='button') Sign up!

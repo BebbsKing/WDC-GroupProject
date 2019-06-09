@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    +search-hero
+    main.container(role='main')
+        .my-3.p-3.bg-white.rounded.shadow-sm
+            .container
+                .row
+                    .col-sm.pb-3
+                        p
+                        h3 We're almost there!
+                        .container.border-bottom.border-gray.pb-3.mb-0
+                            .row.align-items-end
+                                .rounded.float-left.cover.thumbnail
+                                .col
+                                    h4.font-weight-bold Shobosho
+                                    a.book-info  🕐 05/30/2019
+                                    a.book-info  📅 7:30 PM
+                                    a.book-info  👤 2
+            .container
+                .row
+                    .col-sm.pb-3
+                        .input-group
+                            input.form-control(type='text', placeholder='First name', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-3
+                        .input-group
+                            input.form-control(type='text', placeholder='Last name', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Email', aria-label='Location', aria-describedby='button-addon2')
+                    .col-sm.pb-4
+                        .input-group
+                            input.form-control(type='text', placeholder='Phone number', aria-label='Location', aria-describedby='button-addon2')
+                .row
+                    .col.pb-3
+                        a.btn.btn-block.btn-primary(href='/success' type='submit') Book it!
+
